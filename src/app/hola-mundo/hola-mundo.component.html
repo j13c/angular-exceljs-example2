@@ -1,0 +1,18 @@
+<div class='hello-world'>
+  <h1>{{ tittle }}</h1>
+  <h2>Subtitle</h2>
+</div>
+
+<label class="hello-world">Users</label>
+ <ul>
+   <li>{{ users[0] }}</li>
+   <li>{{ users[1] }}</li>
+   <li>{{ users[2] }}</li>
+ </ul>
+
+ <label class="hello-world">For Users2</label>
+ <ul>
+   <li *ngFor="let user of users2">
+      {{ user }}
+   </li>
+ </ul>
