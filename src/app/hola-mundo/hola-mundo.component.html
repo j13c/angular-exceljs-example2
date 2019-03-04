@@ -16,3 +16,10 @@
       {{ user }}
    </li>
  </ul>
+
+ <label [ngClass] = "{directivaOn: activated, directivaOff: !activated}" (click)="changeState()" >If activated</label>
+  <ul>
+      <li *ngIf="activated">
+          Activated
+      </li>
+  </ul>

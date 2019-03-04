@@ -10,6 +10,12 @@ export class HolaMundoComponent implements OnInit {
   tittle = 'Welcome To Angular';
   users = ['ryan','joe','juan'];
   users2 = ['ryan','joe','juan','antonio','jean','trujillo'];
+  
+  activated: boolean = true;
+
+  changeState(){
+    this.activated = !this.activated;
+  }
 
 
   constructor() { }
