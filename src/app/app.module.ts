@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HelloWorld } from './primercomponente/primer.component'; 
 import { HelloWorld2 } from './segundocomponente/segundo.componente';
 import { HolaMundoComponent } from './hola-mundo/hola-mundo.component'; 
+import { DatePipe } from '../../node_modules/@angular/common';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { HolaMundoComponent } from './hola-mundo/hola-mundo.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

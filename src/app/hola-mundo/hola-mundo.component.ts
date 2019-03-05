@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ExcelService } from '../excelcomponente/excel.service';
+
 
 @Component({
   selector: 'app-hola-mundo',
@@ -17,8 +19,11 @@ export class HolaMundoComponent implements OnInit {
     this.activated = !this.activated;
   }
 
+  constructor(private excelService: ExcelService) { }
 
-  constructor() { }
+  generateExcel(){
+    this.excelService.generateExcel();
+  }
 
   ngOnInit() {
   }

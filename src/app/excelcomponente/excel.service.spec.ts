@@ -5,7 +5,9 @@ import { ExcelService } from './excel.service';
 
 
 describe('ExcelService', () => {
-  beforeEach(() => TestBed.configureTestingModule({}));
+  beforeEach(() => TestBed.configureTestingModule({
+    providers: [ExcelService]
+  }));
 
   it('should be created', () => {
     const service: ExcelService = TestBed.get(ExcelService);
